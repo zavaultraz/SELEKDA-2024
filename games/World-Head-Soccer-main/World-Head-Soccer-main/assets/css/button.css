@@ -1,0 +1,45 @@
+.backButton {
+    width: 80px;
+    height: auto;
+    background-color: rgb(129, 224, 253);
+    border-radius: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.infoButton {
+    padding: 5px 20px;
+    background-color: #334;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 221, 255);
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.startButton {
+    padding: 5px 20px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 221, 255);
+    font-size: 40px;
+    font-weight: bold;
+    color: #334;
+}
+
+.myButton {
+    width: 200px;
+    padding: 5px 20px;
+    background-color: #334;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 221, 255);
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.btn:hover {
+    background-color: white;
+    color: #334;
+    font-weight: bold;
+}

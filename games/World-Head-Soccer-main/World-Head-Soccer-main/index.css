@@ -1,0 +1,53 @@
+*,html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.backToMenu{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.5em;
+    left: 0;
+    margin-left: 6.2em;
+    gap: 2em;
+}
+.btn-backToMenu{
+    cursor: pointer;
+    padding: 3px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+.backToLevel{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 0.5em;
+    right: 0;
+    margin-right: 6.5em;
+    gap: 2em;
+}
+.btn-backToLevel{
+    cursor: pointer;
+    padding: 3px 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+

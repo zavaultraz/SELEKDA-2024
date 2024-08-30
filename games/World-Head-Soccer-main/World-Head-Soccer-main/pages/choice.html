@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/config.css" />
+    <link rel="stylesheet" href="../assets/css/button.css" />
+    <link
+      rel="stylesheet"
+      href="../assets/libraries/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-image-menu">
+    <div
+      class="full-height container d-flex flex-column justify-content-center align-items-center"
+    >
+      <div
+        class="full-height mt-5 mb-3 d-flex justify-content-center align-items-center"
+      >
+        <div class="container d-flex justify-content-center align-center">
+          <div class="row">
+            <div
+              class="card-custom col-md-12 p-3 d-flex align-items-start justify-content-center mx-5"
+            >
+              <a
+                name="btn_choice"
+                id="imgPlayer1"
+                class="btn myButton"
+                href="dificuldade.html"
+                role="button"
+                onclick="setPlayer()"
+                >Player 1</a
+              >
+              <div
+                class="card-custom d-flex justify-content-center align-items-center"
+              >
+              <img src="../assets/main/previous.png" id="back" class="back bg-warning" alt="" style="width: 30px;">
+              <div class="galery-wrap">  
+              <div class="gallery">
+                  <div>
+                    <span><img src="../assets/Flag/Brazil.png" alt="" /></span>
+                  </div>
+                </div>
+            </div>
+                <img src="../assets/main/right-arrow.png" id="next" class="next bg-warning" alt="" style="width: 30px;">
+              </div>
+            </div>
+          </div>
+          <div class="row mx-5 align-center">
+            <div
+              class="card-custom col-md-12 p-3 d-flex align-items-start justify-content-center mx-5"
+            >
+              <a
+                name="btn_choice"
+                id="imgPlayer2"
+                class="btn myButton"
+                href="dificuldade.html"
+                role="button"
+                onclick="setPlayer()"
+                >Player 1</a
+              >
+            </div>
+            <div
+              class="col-md-12 p-3 d-flex align-items-center justify-content-center mb-3 mx-5"
+            >
+              <a
+                name="btn_choice"
+                id="choicePlayer"
+                class="btn myButton"
+                href="dificuldade.html"
+                role="button"
+                onclick="setPlayer()"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-center w-100" style="margin-left: 20px">
+        <div
+          class="col-md-6 p-3 d-flex align-items-center justify-content-center mb-3"
+        >
+          <a
+            name="btn_choice"
+            id="btn_choice"
+            class="btn myButton p-3 fw-bold w-100"
+            href="start.html"
+            role="button"
+            >Back</a
+          >
+        </div>
+        <div
+          class="col-md-6 p-3 d-flex align-items-center justify-content-center mb-3"
+        >
+          <a
+            name="btn_choice"
+            id="btn_choice"
+            class="btn startButton p-3 fw-bold w-100"
+            href="dificuldade.html"
+            role="button"
+            >Start</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="../classes/choice.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Game: O guardião" />
+    <meta name="keywords" content="Game, Canvas, Javascript, Guardiao" />
+
+    <!-- To Do - Author -->
+    <meta name="author" content="H & S & M" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="../assets/libraries/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/config.css" />
+    <link rel="stylesheet" href="../assets/css/button.css" />
+  </head>
+
+  <body class="bg-image-menu">
+    <div class="full-height container d-flex justify-content-center align-items-center">
+      <div class="d-flex justify-content-center align-items-center row">
+          <div class="card p-5 d-flex justify-content-center align-items-center card-custom">
+            <h1 class="title mb-3">Choose your Level!!</h1>
+            <div class="title mb-3">Level</div>
+          <div>
+            <a
+              name="btn_dificuldade"
+              id="btn_facil"
+              class="btn myButton mb-3"
+              href="../index.html"
+              role="button"
+              onclick="setDificuldade(1)"
+              >Easy</a
+            >
+          </div>
+          <div>
+            <a
+              name="btn_dificuldade"
+              id="btn_medio"
+              class="btn myButton mb-3"
+              href="../index.html"
+              role="button"
+              onclick="setDificuldade(2)"
+              >Medium</a
+            >
+          </div>
+          <div>
+            <a
+              name="btn_dificuldade"
+              id="btn_dificil"
+              class="btn myButton mb-3"
+              href="../index.html"
+              role="button"
+              onclick="setDificuldade(3)"
+              >Hard</a
+            >
+          </div>
+          <div>
+            <a
+              name="btn_dificuldade"
+              id="btn_voltar"
+              class="btn  myButton mb-3 btn-back"
+              href="../pages/start.html"
+              role="button"
+              >Back</a
+            >
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+
+    <!-- JS -->
+    <script src="../classes/config.js"></script>
+  </body>
+</html>

@@ -5,68 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Detail</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Your Logo</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blogpage.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/assets/WEB TECH.png" alt="Webtech ID Logo" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogpage.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
+    <br>
+    <br>
 
     <!-- Main Content -->
     <div class="container my-5">
         <div class="row">
             <!-- Blog Content -->
             <div class="col-lg-8">
-                <h1 class="mb-3">Blog Title Goes Here</h1>
-                <img src="https://via.placeholder.com/800x400" class="img-fluid mb-4" alt="Blog Image">
+                <h1 class="mb-3">IOT Tutorial Pemula</h1>
+                <img src="/assets/news/2.png" class="img-fluid mb-4" alt="Blog Image">
                 <p class="lead">Published on August 30, 2024 | Category: Web Development</p>
                 <hr>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at venenatis magna. 
-                    Curabitur auctor, sapien id dapibus gravida, lorem urna sollicitudin arcu, 
-                    vel pellentesque turpis nisl a justo.
+                    IoT adalah hal yang penting dalam era teknologi saat ini, 
+                    memungkinkan perangkat sehari-hari untuk saling terhubung dan berkomunikasi melalui internet. 
+                    Untuk pemula yang ingin memulai perjalanan mereka dalam dunia IoT, memahami dasar-dasarnya adalah langkah pertama yang krusial. Tutorial ini akan memandu Anda melalui konsep-konsep dasar IoT, seperti sensor, aktuator, dan platform komunikasi yang digunakan untuk menghubungkan berbagai perangkat.
                 </p>
                 <p>
-                    Integer nec nunc vel nulla malesuada cursus. Ut interdum, mauris a ullamcorper cursus, 
-                    magna tortor vestibulum nulla, ac vulputate lorem eros in ligula.
+                    Langkah awal dalam tutorial IoT pemula adalah memilih perangkat keras yang tepat. 
+                    Biasanya, Anda akan memerlukan mikrokontroler seperti Arduino atau Raspberry Pi, 
+                    serta sensor dan aktuator yang sesuai dengan proyek Anda. Setelah perangkat keras siap, 
+                    Anda perlu mempelajari bagaimana cara menghubungkannya ke jaringan internet menggunakan 
+                    protokol komunikasi seperti MQTT atau HTTP. 
                 </p>
                 <blockquote class="blockquote">
-                    <p class="mb-0">"This is an example of a blockquote. It stands out from the rest of the text."</p>
+                    <p class="mb-0">Ini akan memungkinkan perangkat Anda untuk mengirim dan menerima data secara efisien.</p>
                 </blockquote>
                 <p>
-                    Donec at neque nec magna elementum auctor. Vivamus malesuada eros vel sapien pellentesque, 
-                    non tempor odio dignissim. Cras gravida ex vel eros scelerisque, at facilisis nisi mollis.
+                    Setelah perangkat keras dan komunikasi diatur, langkah selanjutnya adalah pemrograman. 
+                    Anda akan menulis kode untuk mengontrol perangkat Anda, membaca data dari sensor, dan mengirim data ke server atau cloud. 
+                    Banyak platform IoT, seperti Blynk atau Node-RED, menyediakan antarmuka yang memudahkan pemula dalam mengelola dan memvisualisasikan data IoT mereka. 
+                    Dengan mengikuti tutorial ini, Anda akan memiliki dasar yang kuat untuk mulai mengeksplorasi berbagai aplikasi IoT dan mengembangkan proyek-proyek inovatif.
                 </p>
                 <hr>
                 <!-- Comments Section -->
                 <div class="comments">
                     <h3>Comments</h3>
                     <div class="mb-4">
-                        <strong>John Doe</strong> on August 30, 2024 at 2:00 PM:
+                        <strong>razka kipli</strong> on August 30, 2024 at 2:00 PM:
                         <p>Great article! I learned a lot.</p>
                     </div>
                     <div class="mb-4">
-                        <strong>Jane Smith</strong> on August 30, 2024 at 3:00 PM:
+                        <strong>Janes robin</strong> on August 30, 2024 at 3:00 PM:
                         <p>Thanks for sharing this information. Very helpful!</p>
                     </div>
                     <form>

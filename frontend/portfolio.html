@@ -4,31 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="shortcut icon " href="/assets/WEB TECH.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style/styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="#">Your Logo</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="blogpage.html">News</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="/assets/WEB TECH.png" alt="Webtech ID Logo" width="50px"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogpage.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -50,13 +56,13 @@
             <!-- Portfolio Item 1 -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 1">
+                    <img src="/assets/portfolio/1.png" class="card-img-top" alt="Project 1">
                     <div class="card-body">
-                        <h5 class="card-title">Web Project 1</h5>
+                        <h5 class="card-title">DGSN Web APP</h5>
                         <p class="card-text">This is a brief description of the project. It covers key features and technologies used.</p>
-                        <p><strong>Author:</strong> John Doe</p>
+                        <p><strong>Author:</strong> Zava</p>
                         <p><strong>Date:</strong> August 30, 2024</p>
-                        <p><strong>Total Views:</strong> 1,200 | <strong>Comments:</strong> 5</p>
+                        <p><strong>Total Views:</strong> 1,200 | <strong>Comments:</strong> 10</p>
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal1">View Details</button>
                     </div>
                 </div>
@@ -65,11 +71,11 @@
             <!-- Portfolio Item 2 -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="app">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 2">
+                    <img src="/assets/portfolio/2.png" class="card-img-top" alt="Project 2">
                     <div class="card-body">
-                        <h5 class="card-title">App Project 1</h5>
-                        <p class="card-text">This is a brief description of the project. It covers key features and technologies used.</p>
-                        <p><strong>Author:</strong> Jane Smith</p>
+                        <h5 class="card-title">Head Soceer game</h5>
+                        <p class="card-text">Game Head Soceer</p>
+                        <p><strong>Author:</strong> zava</p>
                         <p><strong>Date:</strong> August 29, 2024</p>
                         <p><strong>Total Views:</strong> 980 | <strong>Comments:</strong> 10</p>
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal2">View Details</button>
@@ -80,11 +86,11 @@
             <!-- Portfolio Item 3 -->
             <div class="col-lg-4 col-md-6 portfolio-item" data-category="design">
                 <div class="card">
-                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 3">
+                    <img src="/assets/portfolio/3.png" class="card-img-top" alt="Project 3">
                     <div class="card-body">
-                        <h5 class="card-title">Design Project 1</h5>
+                        <h5 class="card-title">Smart CCTV ROBO</h5>
                         <p class="card-text">This is a brief description of the project. It covers key features and technologies used.</p>
-                        <p><strong>Author:</strong> Alex Johnson</p>
+                        <p><strong>Author:</strong> zava</p>
                         <p><strong>Date:</strong> August 28, 2024</p>
                         <p><strong>Total Views:</strong> 870 | <strong>Comments:</strong> 8</p>
                         <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal3">View Details</button>
@@ -104,14 +110,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="Project Image">
+                    <img src="/assets/portfolio/HEAD/1.png" style="justify-content: center; display: flex;" class="img-fluid mb-3" alt="Project Image">
                     <p>
                         This section contains the detailed description of the project. It includes objectives, 
                         challenges faced, solutions provided, and the impact of the project. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at venenatis magna.
                     </p>
-                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap</p>
-                    <p><strong>Author:</strong> John Doe</p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript,</p>
+                    <p><strong>Author:</strong> Zava</p>
                     <p><strong>Date:</strong> August 30, 2024</p>
                     <p><strong>Total Views:</strong> 1,200 | <strong>Comments:</strong> 5</p>
                 </div>
@@ -131,14 +137,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="Project Image">
+                    <img src="/assets/portfolio/HEAD/2.png" class="img-fluid mb-3" alt="Project Image">
                     <p>
                         This section contains the detailed description of the project. It includes objectives, 
                         challenges faced, solutions provided, and the impact of the project. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at venenatis magna.
                     </p>
-                    <p><strong>Technologies Used:</strong> Flutter, Dart, Firebase</p>
-                    <p><strong>Author:</strong> Jane Smith</p>
+                    <p><strong>Technologies Used:</strong> JavaScript,HTML,CSS</p>
+                    <p><strong>Author:</strong> zava</p>
                     <p><strong>Date:</strong> August 29, 2024</p>
                     <p><strong>Total Views:</strong> 980 | <strong>Comments:</strong> 10</p>
                 </div>
@@ -158,14 +164,14 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="Project Image">
+                    <img src="/assets/portfolio/HEAD/3.png" class="img-fluid mb-3" alt="Project Image">
                     <p>
                         This section contains the detailed description of the project. It includes objectives, 
                         challenges faced, solutions provided, and the impact of the project. 
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at venenatis magna.
                     </p>
-                    <p><strong>Technologies Used:</strong> Figma, Adobe XD</p>
-                    <p><strong>Author:</strong> Alex Johnson</p>
+                    <p><strong>Technologies Used:</strong> Picto block,Python</p>
+                    <p><strong>Author:</strong> Zava</p>
                     <p><strong>Date:</strong> August 28, 2024</p>
                     <p><strong>Total Views:</strong> 870 | <strong>Comments:</strong> 8</p>
                 </div>

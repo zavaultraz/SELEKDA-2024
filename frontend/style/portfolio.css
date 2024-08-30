@@ -1,0 +1,15 @@
+.navbar {
+    background-color: #0033a0; /* Biru Webtech ID */
+}
+
+.navbar-brand img {
+    height: 40px;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #b0bec5 !important;
+}

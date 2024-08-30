@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Your Logo</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blogpage.html">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <div class="container my-5">
+        <h1 class="mb-4 text-center">Our Portfolio</h1>
+
+        <!-- Portfolio Categories Filter -->
+        <div class="text-center mb-4">
+            <button class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="web">Web Development</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="app">Mobile Apps</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="design">UI/UX Design</button>
+            <button class="btn btn-outline-primary filter-btn" data-filter="marketing">Digital Marketing</button>
+        </div>
+
+        <!-- Portfolio List -->
+        <div class="row">
+            <!-- Portfolio Item 1 -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="web">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Project 1</h5>
+                        <p class="card-text">This is a brief description of the project. It covers key features and technologies used.</p>
+                        <p><strong>Author:</strong> John Doe</p>
+                        <p><strong>Date:</strong> August 30, 2024</p>
+                        <p><strong>Total Views:</strong> 1,200 | <strong>Comments:</strong> 5</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal1">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 2 -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="app">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">App Project 1</h5>
+                        <p class="card-text">This is a brief description of the project. It covers key features and technologies used.</p>
+                        <p><strong>Author:</strong> Jane Smith</p>
+                        <p><strong>Date:</strong> August 29, 2024</p>
+                        <p><strong>Total Views:</strong> 980 | <strong>Comments:</strong> 10</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal2">View Details</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Portfolio Item 3 -->
+            <div class="col-lg-4 col-md-6 portfolio-item" data-category="design">
+                <div class="card">
+                    <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Design Project 1</h5>
+                        <p class="card-text">This is a brief description of the project. It covers key features and technologies used.</p>
+                        <p><strong>Author:</strong> Alex Johnson</p>
+                        <p><strong>Date:</strong> August 28, 2024</p>
+                        <p><strong>Total Views:</strong> 870 | <strong>Comments:</strong> 8</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#portfolioModal3">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel1">Web Project 1 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="Project Image">
+                    <p>
+                        This section contains the detailed description of the project. It includes objectives, 
+                        challenges faced, solutions provided, and the impact of the project. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at venenatis magna.
+                    </p>
+                    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, Bootstrap</p>
+                    <p><strong>Author:</strong> John Doe</p>
+                    <p><strong>Date:</strong> August 30, 2024</p>
+                    <p><strong>Total Views:</strong> 1,200 | <strong>Comments:</strong> 5</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel2">App Project 1 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="Project Image">
+                    <p>
+                        This section contains the detailed description of the project. It includes objectives, 
+                        challenges faced, solutions provided, and the impact of the project. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at venenatis magna.
+                    </p>
+                    <p><strong>Technologies Used:</strong> Flutter, Dart, Firebase</p>
+                    <p><strong>Author:</strong> Jane Smith</p>
+                    <p><strong>Date:</strong> August 29, 2024</p>
+                    <p><strong>Total Views:</strong> 980 | <strong>Comments:</strong> 10</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel3">Design Project 1 Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/800x400" class="img-fluid mb-3" alt="Project Image">
+                    <p>
+                        This section contains the detailed description of the project. It includes objectives, 
+                        challenges faced, solutions provided, and the impact of the project. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at venenatis magna.
+                    </p>
+                    <p><strong>Technologies Used:</strong> Figma, Adobe XD</p>
+                    <p><strong>Author:</strong> Alex Johnson</p>
+                    <p><strong>Date:</strong> August 28, 2024</p>
+                    <p><strong>Total Views:</strong> 870 | <strong>Comments:</strong> 8</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Filter portfolio items
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                document.querySelectorAll('.portfolio-item').forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

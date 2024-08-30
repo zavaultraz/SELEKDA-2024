@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa; /* Background color for the page */
+    color: #333;
+}
+
+h2, h3 {
+    color: #0033a0; /* Biru Webtech ID */
+}
+
+/* Sidebar Styles */
+aside {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside .list-group-item a {
+    color: #0033a0;
+}
+
+aside .list-group-item a:hover {
+    color: #b0bec5;
+}
+
+/* Main Content Styles */
+article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+article img {
+    border-radius: 8px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #0033a0;
+}
+
+footer a {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    color: #b0bec5;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSGN - Illustration Web App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div id="welcome-screen" class="center-screen">
+        <img src="../assets/DGSN/dgsn.png" alt="DSGN Logo" class="logo">
+        <button id="start-button">Start</button>
+    </div>
+
+    <!-- Main Workspace -->
+    <div id="workspace" class="hidden">
+        <div class="toolbar">
+            <button id="brush-tool">Brush</button>
+            <button id="eraser-tool">Eraser</button>
+            <button id="move-tool">Move</button>
+            <button id="shape-tool">Shape</button>
+            <button id="text-tool">Text</button>
+            <button id="import-tool">Import</button>
+            <button id="export-tool">Export</button>
+            <button id="maximize-canvas">Maximize</button>
+            <button id="minimize-canvas">Minimize</button>
+            <input type="file" id="import-file" style="display: none;">
+        </div>
+
+        <div class="properties-bar">
+            <label>Brush Size:</label>
+            <input type="range" id="brush-size" min="1" max="100" value="5">
+            <label>Brush Opacity:</label>
+            <input type="range" id="brush-opacity" min="0" max="100" value="100">
+            <label>Text Size:</label>
+            <input type="range" id="text-size" min="10" max="100" value="20">
+            <label>Shape Size:</label>
+            <input type="range" id="shape-size" min="10" max="100" value="50">
+            <label>Shape Color:</label>
+            <input type="color" id="shape-color" value="#000000">
+            <label>Text Color:</label>
+            <input type="color" id="text-color" value="#000000">
+            <label>Brush Color:</label>
+            <input type="color" id="brush-color" value="#000000">
+        </div>
+
+        <div class="workarea">
+            <canvas id="dsgn-canvas"></canvas>
+        </div>
+
+        <div class="layer-bar">
+            <ul id="layer-stack">
+                <li class="layer-item" data-layer-id="0">Background Layer</li>
+            </ul>
+            <button id="add-layer-button">Add Layer</button>
+        </div>
+
+        <div class="footer-bar">
+            <button id="undo-button">Undo <span id="undo-counter">0</span></button>
+            <button id="redo-button">Redo <span id="redo-counter">0</span></button>
+            <button id="zoom-in-button">Zoom In</button>
+            <button id="zoom-out-button">Zoom Out</button>
+            <span id="zoom-percentage">100%</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
